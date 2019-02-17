@@ -1,0 +1,1 @@
+SELECT titulos.titulo, titulos.ISBN, autor.nombre, Editorial.NameEditorial, titulos.descripcion FROM titulos, autor, editorial WHERE (titulos.idautor=autor.idautor) AND (titulos.ideditorial=editorial.ideditorial) AND (titulos.titulo like '%J%');
